@@ -1,0 +1,289 @@
+<!DOCTYPE html>  <html lang="id">  
+<head>  
+<meta charset="UTF-8">  
+<title>Tour Travel Jogja</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <style>  
+:root{  
+    --primary:#4f7f6d;  
+    --dark:#1f2933;  
+    --light:#f9fafb;  
+    --gray:#e5e7eb;  
+}  
+  
+*{  
+    margin:0;  
+    padding:0;  
+    box-sizing:border-box;  
+    font-family:'Segoe UI', sans-serif;  
+}  
+  
+body{  
+    background:var(--light);  
+    color:var(--dark);  
+}  
+  
+/* NAVBAR */  
+header{  
+    background:#fff;  
+    border-bottom:1px solid var(--gray);  
+    padding:18px 60px;  
+    display:flex;  
+    justify-content:space-between;  
+    align-items:center;  
+    position:sticky;  
+    top:0;  
+    z-index:1000;  
+}  
+  
+header h1{  
+    color:var(--primary);  
+    font-size:22px;  
+}  
+  
+header ul{  
+    list-style:none;  
+    display:flex;  
+    gap:30px;  
+}  
+  
+header ul li a{  
+    text-decoration:none;  
+    color:var(--dark);  
+}  
+  
+/* HERO (SUDAH DIPERBAIKI) */  
+.hero{  
+    height:260px;  
+    display:flex;  
+    align-items:center;  
+    justify-content:center;  
+    text-align:center;  
+    color:#fff;  
+  
+    background-image:  
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),  
+        url("pantai_watu_kodok.webp");  
+  
+    background-repeat:no-repeat;  
+    background-size:cover;  
+    background-position:center;  
+}  
+  
+.hero h2{  
+    font-size:36px;  
+    margin-bottom:8px;  
+}  
+  
+.hero p{  
+    font-size:14px;  
+    opacity:0.9;  
+}  
+  
+/* SECTION */  
+section{  
+    padding:65px 60px;  
+}  
+  
+section h2{  
+    text-align:center;  
+    color:var(--primary);  
+    margin-bottom:45px;  
+}  
+  
+/* GALERI */  
+.gallery{  
+    display:grid;  
+    grid-template-columns:repeat(2,1fr);  
+    gap:26px;  
+}  
+  
+.gallery-card{  
+    background:#fff;  
+    border-radius:12px;  
+    overflow:hidden;  
+    box-shadow:0 6px 16px rgba(0,0,0,.08);  
+}  
+  
+.gallery-card img{  
+    width:100%;  
+    height:200px;  
+    object-fit:cover;  
+}  
+  
+.gallery-card p{  
+    padding:12px;  
+    text-align:center;  
+    font-size:14px;  
+}  
+  
+/* PAKET */  
+.packages{  
+    display:grid;  
+    grid-template-columns:repeat(2,1fr);  
+    gap:26px;  
+}  
+  
+.package-card{  
+    background:#fff;  
+    border-radius:12px;  
+    overflow:hidden;  
+    box-shadow:0 6px 18px rgba(0,0,0,.08);  
+}  
+  
+.package-card img{  
+    width:100%;  
+    height:190px;  
+    object-fit:cover;  
+}  
+  
+.package-content{  
+    padding:16px;  
+}  
+  
+.package-content h3{  
+    color:var(--primary);  
+    font-size:17px;  
+}  
+  
+.package-content p{  
+    font-size:13px;  
+}  
+  
+.price{  
+    font-weight:bold;  
+    margin:8px 0;  
+    font-size:14px;  
+}  
+  
+.btn{  
+    display:inline-block;  
+    padding:8px 16px;  
+    background:var(--primary);  
+    color:white;  
+    border-radius:7px;  
+    text-decoration:none;  
+    font-size:13px;  
+}  
+  
+/* VIDEO */  
+.video-box{  
+    display:flex;  
+    justify-content:center;  
+}  
+  
+.video-box iframe{  
+    width:460px;  
+    aspect-ratio:16/9;  
+    border-radius:12px;  
+    border:none;  
+    max-width:100%;  
+}  
+  
+/* FOOTER */  
+footer{  
+    background:#fff;  
+    border-top:1px solid var(--gray);  
+    text-align:center;  
+    padding:22px;  
+    font-size:14px;  
+}  
+  
+/* RESPONSIVE */  
+@media(max-width:768px){  
+    .gallery,.packages{  
+        grid-template-columns:1fr;  
+    }  
+    header{  
+        flex-direction:column;  
+        gap:14px;  
+    }  
+    section{  
+        padding:55px 25px;  
+    }  
+}  
+</style>  </head>  <body>  <header>  
+    <h1>J Tour & Travel</h1>  
+    <ul>  
+        <li><a href="#galeri">Galeri</a></li>  
+        <li><a href="#paket">Paket</a></li>  
+        <li><a href="#video">Video</a></li>  
+        <li><a href="#kontak">Kontak</a></li>  
+    </ul>  
+</header>  <section class="hero">  
+    <div>  
+        <h2>Jogja Istimewa</h2>  
+        <p>Beranda | Daftar Destinasi</p>  
+    </div>  
+</section>  <section id="galeri">  
+<h2>Galeri Wisata</h2>  
+<div class="gallery">  
+    <div class="gallery-card">  
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">  
+        <p>Pantai Eksotis</p>  
+    </div>  
+    <div class="gallery-card">  
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">  
+        <p>Pegunungan</p>  
+    </div>  
+    <div class="gallery-card">  
+        <img src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f">  
+        <p>Camping Alam</p>  
+    </div>  
+    <div class="gallery-card">  
+        <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef">  
+        <p>Fotografi Alam</p>  
+    </div>  
+</div>  
+</section>  <section id="paket">  
+<h2>Paket Wisata</h2>  
+<div class="packages">  <div class="package-card">  
+    <img src="malioboro.jpg">  
+    <div class="package-content">  
+        <h3>Paket Per Grup</h3>  
+        <p class="price">Rp 300.000</p>  
+        <a class="btn">Pesan</a>  
+    </div>  
+</div>  
+
+<div class="package-card">  
+    <img src="merapi.jpg">  
+    <div class="package-content">  
+        <h3>Paket Adventure</h3>  
+        <p class="price">Rp 300.000</p>  
+        <a class="btn" href="pemesanan/form_pesan.php>Pesan</a>  
+    </div>  
+</div>  
+
+<div class="package-card">  
+    <img src="prambanan.jpg">  
+    <div class="package-content">  
+        <h3>Paket Per Grup</h3>  
+        <p class="price">Rp 300.000</p>  
+        <a class="btn" href="pemesanan/form_pesan.php>Pesan</a>  
+    </div>  
+</div>  
+
+<div class="package-card">  
+    <img src="candi.jpg">  
+    <div class="package-content">  
+        <h3>Paket Per Grup</h3>  
+        <p class="price">Rp 300.000</p>  
+        <a class="btn" href="pemesanan/form_pesan.php>Pesan</a>  
+    </div>  
+</div>
+
+</div>  
+</section>  <section id="video">  
+<h2>Video Promosi</h2>  
+<div class="video-box">  
+    <iframe   
+        src="https://www.youtube.com/embed/F18vJTtX_Ns"  
+        title="Video Promosi J Tour & Travel"  
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  
+        allowfullscreen>  
+    </iframe>  
+</div>  
+</section>  <footer id="kontak">  
+<p>© 2025 J Tour & Travel by Apee</p>  
+</footer>  </body>  
+</html>
