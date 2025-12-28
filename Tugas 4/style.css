@@ -1,0 +1,10 @@
+:root{--primary:#4f7f6d;--dark:#1f2933;--light:#f9fafb;--gray:#e5e7eb;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{background:var(--light);color:var(--dark);}
+.card{background:#fff;border-radius:14px;padding:28px;box-shadow:0 8px 22px rgba(0,0,0,.08);max-width:520px;margin:auto;}
+.title{text-align:center;color:var(--primary);margin-bottom:22px;}
+.form-group{margin-bottom:16px;}
+.form-group label{font-size:14px;margin-bottom:6px;display:block;}
+.form-group input{width:100%;padding:10px;border-radius:8px;border:1px solid var(--gray);}
+.btn{padding:10px 18px;background:var(--primary);color:#fff;border-radius:8px;text-decoration:none;border:none;}
+.btn-secondary{background:#6b7280;}
